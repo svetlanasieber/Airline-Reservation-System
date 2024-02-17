@@ -3,14 +3,14 @@
 #include<string.h>
 using namespace std;
 
-int glob=0; //global variables
+int glob=0; 
 int global=10;
 
-class d_booking //class  for domestic booking
+class d_booking 
 {
 protected:
     int pnr;
-    char f_d[10],toja[7],tojd[7]; //protected members
+    char f_d[10],toja[7],tojd[7]; 
     long int doj;
     int choice,src,dest;
 public://public member functions
@@ -19,7 +19,7 @@ public://public member functions
         glob++; // increment variable
         pnr=glob;
     }
-    int j_detail() // function declaration and definition for domestic journey
+    int j_detail() 
     {
         cout << "\nEnter DateOfJourney(DDMMYY)." << "Please enter a valid date." <<  endl;
         cin >> doj;
